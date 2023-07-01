@@ -11,7 +11,7 @@ export default function bs_list(haystack: number[], needle: number): boolean {
     let high = haystack.length;
    
     do {
-        let mid = Math.floor((low + (high - low)) / 2);
+        let mid = Math.floor((low + high) / 2);
         const value = haystack[mid];
         if (value === needle) {
             return true;
